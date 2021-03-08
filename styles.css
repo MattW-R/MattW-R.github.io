@@ -12,6 +12,12 @@ body {
 	background-color: #120458;
 	color: #FE75FE;
 	margin-top: 60px;
+	background-image: url(BG.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 nav {
@@ -124,6 +130,7 @@ header > div > div {
 	width: 30%;
 	min-width: 300px;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
+	background-color: #120458;
 }
 
 header > div > div:hover {
