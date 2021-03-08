@@ -53,12 +53,17 @@ p {
 
 nav a {
 	display: inline-block;
-	text-decoration: none;
+	text-decoration-color: transparent;
 	color: #FF00A0;
+	transition: text-decoration-color 200ms ease-in 100ms;
 }
 
 nav a:visited {
 	color: #FF00A0;
+}
+
+nav a:hover {
+	text-decoration-color: #FF00A0;
 }
 
 .nav-name {
