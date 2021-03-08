@@ -123,11 +123,12 @@ header > div > div {
 	margin: 5px;
 	width: 30%;
 	min-width: 300px;
-	background-image: url(Static.gif);
+	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
 }
 
 header > div > div:hover {
-	background-image: none;
+	color: #FF124F;
+	border-color: #FF124F;
 }
 
 .anchor-target {
