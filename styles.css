@@ -80,6 +80,12 @@ header > div {
 	display: flex;
 }
 
+header > div > div {
+	border: 3px solid #FE75FE;
+	border-radius: 10px;
+	margin: 5px;
+}
+
 .anchor-target {
 	display: block;
 	height: 0px;
