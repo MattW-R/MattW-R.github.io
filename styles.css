@@ -92,6 +92,11 @@ nav a:hover {
 	border-color: #FF00A0;
 }
 
+nav a:focus {
+	border-color: #FF00A0;
+	outline: none;
+}
+
 .nav-name {
 	float: left;
 }
