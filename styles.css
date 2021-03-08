@@ -1,5 +1,19 @@
+html {
+	font-size: 22px;
+}
+
 body {
 	background-color: #120458;
 	color: #FE75FE;
 }
 
+nav {
+	position: fixed;
+	background-color: #120458;
+	top: 0;
+}
+
+nav a, nav h2 {
+	margin: 0, 10px;
+	font-size: 1rem;
+}
