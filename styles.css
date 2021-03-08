@@ -76,7 +76,7 @@ header > div {
 	display: flex;
 }
 
-.anchor {
+.anchor-target {
 	display: block;
 	height: 0px;
 	position: relative;
