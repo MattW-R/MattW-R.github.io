@@ -21,6 +21,7 @@ nav {
 	width: 100%;
 	color: #FF00A0;
 	z-index: 5;
+	overflow: auto;
 }
 
 nav > div {
@@ -29,19 +30,30 @@ nav > div {
 	left: 2.5%;
 	position: relative;
 	border-bottom: 3px solid #FF00A0;
-	overflow: auto;
+	overflow: hidden;
 }
 
 span {
 	display: inline-block;
+}
+
+nav h2 span {
 	width: 0;
 	color: transparent;
 	transition: width 200ms ease-in 100ms, color 200ms ease-in 100ms;
+	user-select: none;
 }
 
 nav h2:hover span {
 	width: 3rem;
 	color: #FF00A0;
+	user-select: all;
+}
+
+nav a .short-text {
+	width: 0;
+	color: transparent;
+	user-select: none;
 }
 
 a, h2, p, h1 {
@@ -112,4 +124,40 @@ header > div > div {
 	height: 0px;
 	position: relative;
 	top: -60px;
+}
+
+@media screen and (max-width: 630px) {
+	nav h2:hover span {
+		width: 0;
+		color: transparent;
+		user-select: none;
+	}
+	
+	nav a .long-text {
+		width: 0;
+		color: transparent;
+		user-select: none;
+		display :none;
+		transition: none;
+	}
+	
+	nav a .short-text {
+		width: auto;
+		color: #FF00A0;
+		user-select: all;
+		transition: none;
+	}
+	
+	nav a:hover .long-text {
+		width: auto;
+		color: #FF00A0;
+		user-select: all;
+		display: inline-block;
+	}
+	
+	nav a:hover .short-text {
+		width: 0;
+		color: transparent;
+		user-select: none;
+	}
 }
