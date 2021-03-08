@@ -118,6 +118,11 @@ header > div > div {
 	margin: 5px;
 	width: 30%;
 	min-width: 300px;
+	background-image: url(Static.gif);
+}
+
+header > div > div:hover {
+	background-image: none;
 }
 
 .anchor-target {
