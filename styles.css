@@ -15,6 +15,7 @@ nav {
 	top: 0;
 	overflow: auto;
 	width: 100%;
+	color: #FF00A0;
 }
 
 nav div {
@@ -29,6 +30,12 @@ nav a, nav h2 {
 
 nav a {
 	display: inline-block;
+	text-decoration: none;
+	color: #FF00A0;
+}
+
+nav a:visited {
+	color: #FF00A0;
 }
 
 .nav-name {
