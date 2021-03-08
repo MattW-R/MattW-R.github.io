@@ -127,12 +127,11 @@ header > div > div {
 }
 
 @media screen and (max-width: 630px) {
-	nav h2:hover span {
-		width: 0;
-		color: transparent;
-		user-select: none;
+	nav h2 {
+		display: none;
 	}
 	
+/*	Shrink & grow navbar links in a narrow resolution:	*/
 	nav a .long-text {
 		width: 0;
 		color: transparent;
