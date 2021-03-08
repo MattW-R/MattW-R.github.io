@@ -42,7 +42,6 @@ a, h2 {
 }
 
 h1 {
-	margin-bottom: 0;
 	font-size: 1.4rem;
 }
 
@@ -78,12 +77,16 @@ header {
 
 header > div {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 header > div > div {
 	border: 3px solid #FE75FE;
 	border-radius: 10px;
 	margin: 5px;
+	width: 30%;
+	min-width: 300px;
 }
 
 .anchor-target {
