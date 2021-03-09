@@ -120,11 +120,11 @@ article {
 	min-width: 300px;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
 	background-color: #120458;
-	height: 410px;
+	height: 450px;
 }
 
 main article {
-	height: 600px;
+	height: 610px;
 }
 
 article:hover, article:focus {
