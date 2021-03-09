@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 22px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 600;
+}
+
+body {
+	background-color: #120458;
+	color: #FE75FE;
+	margin-top: 60px;
+	background-image: url(images/BG.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+nav {
+	position: fixed;
+	background-color: #120458;
+	top: 0;
+	color: #FF00A0;
+	z-index: 5;
+	overflow: hidden;
+	width: 95%;
+	border-bottom: 3px solid #FF00A0;
+	left: 2.5%;
+}
+
+span {
+	display: inline-block;
+}
+
+nav h2 span {
+	width: 0;
+	color: transparent;
+	transition: width 200ms ease-in 100ms, color 200ms ease-in 100ms;
+	user-select: none;
+}
+
+nav h2:hover span {
+	width: 3rem;
+	color: #FF00A0;
+	user-select: all;
+}
+
+nav a .short-text {
+	width: 0;
+	color: transparent;
+	user-select: none;
+}
+
+a, h2, p, h1 {
+	margin: 10px;
+	padding: 5px;
+}
+
+a, h2 {
+	font-size: 1rem;
+	align-content: center;
+}
+
+h1 {
+	font-size: 1.4rem;
+}
+
+p {
+	font-size: 0.8rem;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	transition: border-color 200ms ease-in 100ms;
+	border-bottom: 3px solid transparent;
+}
+
+nav a:visited {
+	color: #FF00A0;
+}
+
+nav a:hover {
+	border-color: #FF00A0;
+}
+
+nav a:focus {
+	border-color: #FF00A0;
+	outline: none;
+}
+
+.nav-name {
+	float: left;
+}
+
+.nav-links {
+	float: right;
+}
+
+header {
+	width: 95%;
+	left: 2.5%;
+	position: relative;
+}
+
+header > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+header > div > div {
+	border: 3px solid #FE75FE;
+	border-radius: 10px;
+	margin: 5px;
+	width: 30%;
+	min-width: 300px;
+	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
+	background-color: #120458;
+}
+
+header > div > div:hover {
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.anchor-target {
+	display: block;
+	height: 0px;
+	position: relative;
+	top: -60px;
+}
+
+@media screen and (max-width: 820px) {
+	nav h2:hover span {
+		width: 0;
+		color: transparent;
+		user-select: none;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	nav h2 {
+		display: none;
+	}
+	
+/*	Shrink & grow navbar links in a narrow resolution:	*/
+	nav a .long-text {
+		width: 0;
+		color: transparent;
+		user-select: none;
+		display :none;
+		transition: none;
+	}
+	
+	nav a .short-text {
+		width: auto;
+		color: #FF00A0;
+		user-select: all;
+		transition: none;
+	}
+	
+	nav a:hover .long-text {
+		width: auto;
+		color: #FF00A0;
+		user-select: all;
+		display: inline-block;
+	}
+	
+	nav a:hover .short-text {
+		width: 0;
+		color: transparent;
+		user-select: none;
+	}
+}
