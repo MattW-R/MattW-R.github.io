@@ -67,6 +67,9 @@ a, h2 {
 
 h1 {
 	font-size: 1.4rem;
+	border: 3px solid #FE75FE;
+	border-radius: 10px;
+	background-color: #120458;
 }
 
 p {
