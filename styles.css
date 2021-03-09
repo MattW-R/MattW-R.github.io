@@ -130,6 +130,10 @@ article:hover {
 	border-color: #FFFFFF;
 }
 
+article img {
+	width: 100%;
+}
+
 .anchor-target {
 	display: block;
 	height: 0px;
