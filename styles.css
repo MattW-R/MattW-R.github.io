@@ -24,19 +24,12 @@ nav {
 	position: fixed;
 	background-color: #120458;
 	top: 0;
-	width: 100%;
 	color: #FF00A0;
 	z-index: 5;
-	overflow: auto;
-}
-
-nav > div {
-	height: 100%;
-	width: 95%;
-	left: 2.5%;
-	position: relative;
-	border-bottom: 3px solid #FF00A0;
 	overflow: hidden;
+	width: 95%;
+	border-bottom: 3px solid #FF00A0;
+	left: 2.5%;
 }
 
 span {
