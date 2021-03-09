@@ -43,7 +43,7 @@ nav h2 span {
 	user-select: none;
 }
 
-nav h2:hover span {
+nav h2:hover span, nav h2:focus span {
 	width: 3rem;
 	color: #FF00A0;
 	user-select: all;
@@ -75,7 +75,7 @@ p {
 	font-family: 'Montserrat', sans-serif;
 }
 
-nav a {
+nav a, nav h2 {
 	display: inline-block;
 	text-decoration: none;
 	transition: border-color 200ms ease-in 100ms;
@@ -86,13 +86,12 @@ nav a:visited {
 	color: #FF00A0;
 }
 
-nav a:hover {
-	border-color: #FF00A0;
+*:focus {
+	outline: none;
 }
 
-nav a:focus {
+nav a:focus, nav a:hover, nav h2:hover, nav h2:focus {
 	border-color: #FF00A0;
-	outline: none;
 }
 
 .nav-name {
@@ -125,7 +124,7 @@ article {
 	background-color: #120458;
 }
 
-article:hover {
+article:hover, article:focus {
 	color: #FFFFFF;
 	border-color: #FFFFFF;
 }
