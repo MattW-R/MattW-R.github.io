@@ -70,9 +70,7 @@ h1 {
 }
 
 p {
-	font-size: 0.8rem;
 	font-weight: 400;
-	font-family: 'Montserrat', sans-serif;
 }
 
 nav a, nav h2 {
@@ -134,6 +132,16 @@ article img {
 	position: relative;
 	left: 2.5%;
 	top: 2.5%;
+}
+
+article p {
+	font-family: 'Libre Barcode 39', cursive;
+	font-size: 0.85rem;
+}
+
+article:hover p, article:focus p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
 }
 
 .anchor-target {
