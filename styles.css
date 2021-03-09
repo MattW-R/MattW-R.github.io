@@ -125,7 +125,7 @@ article {
 	background-color: #120458;
 }
 
-header > div > div:hover {
+article:hover {
 	color: #FFFFFF;
 	border-color: #FFFFFF;
 }
