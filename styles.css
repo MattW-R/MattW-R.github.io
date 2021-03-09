@@ -78,7 +78,6 @@ p {
 nav a {
 	display: inline-block;
 	text-decoration: none;
-	color: #FF00A0;
 	transition: border-color 200ms ease-in 100ms;
 	border-bottom: 3px solid transparent;
 }
