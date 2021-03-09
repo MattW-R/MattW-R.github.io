@@ -137,17 +137,6 @@ article img {
 	top: 2.5%;
 }
 
-main article {
-	height: 280px;
-}
-
-main article p {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	height: 31%;
-}
-
 .anchor-target {
 	display: block;
 	height: 0px;
