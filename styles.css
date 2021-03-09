@@ -43,7 +43,7 @@ nav h2 span {
 	user-select: none;
 }
 
-nav h2:hover span {
+nav h2:hover span, nav h2:focus span {
 	width: 3rem;
 	color: #FF00A0;
 	user-select: all;
@@ -67,15 +67,16 @@ a, h2 {
 
 h1 {
 	font-size: 1.4rem;
+	border: 3px solid #FE75FE;
+	border-radius: 10px;
+	background-color: #120458;
 }
 
 p {
-	font-size: 0.8rem;
 	font-weight: 400;
-	font-family: 'Montserrat', sans-serif;
 }
 
-nav a {
+nav a, nav h2 {
 	display: inline-block;
 	text-decoration: none;
 	transition: border-color 200ms ease-in 100ms;
@@ -86,13 +87,12 @@ nav a:visited {
 	color: #FF00A0;
 }
 
-nav a:hover {
-	border-color: #FF00A0;
+*:focus {
+	outline: none;
 }
 
-nav a:focus {
+nav a:focus, nav a:hover, nav h2:hover, nav h2:focus {
 	border-color: #FF00A0;
-	outline: none;
 }
 
 .nav-name {
@@ -103,19 +103,19 @@ nav a:focus {
 	float: right;
 }
 
-header {
+header, main {
 	width: 95%;
 	left: 2.5%;
 	position: relative;
 }
 
-header > div {
+header > div, main > div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-header > div > div {
+article {
 	border: 3px solid #FE75FE;
 	border-radius: 10px;
 	margin: 5px;
@@ -123,11 +123,44 @@ header > div > div {
 	min-width: 300px;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
 	background-color: #120458;
+	height: 520px;
 }
 
-header > div > div:hover {
-	color: #FFFFFF;
+main article {
+	height: 650px;
+}
+
+article:hover, article:focus-within, h1:focus {
 	border-color: #FFFFFF;
+}
+
+article h2:focus, article p:focus, article:hover, h1:focus {
+	color: #FFFFFF;
+}
+
+article img {
+	width: 95%;
+	position: relative;
+	left: 2.5%;
+	top: 2.5%;
+	border: 6px solid transparent;
+	transition: border-color 200ms ease-in 100ms;
+	border-radius: 20px;
+}
+
+article img:focus {
+	border-color: #FFFFFF;
+}
+
+article p {
+	font-family: 'Libre Barcode 39', cursive;
+	font-size: 0.85rem;
+	transition: font-size 200ms linear;
+}
+
+article:hover p, article:focus-within p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
 }
 
 .anchor-target {
