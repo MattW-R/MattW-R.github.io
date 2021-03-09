@@ -103,19 +103,19 @@ nav a:focus {
 	float: right;
 }
 
-header {
+header, main {
 	width: 95%;
 	left: 2.5%;
 	position: relative;
 }
 
-header > div {
+header > div, main > div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-header > div > div {
+article {
 	border: 3px solid #FE75FE;
 	border-radius: 10px;
 	margin: 5px;
