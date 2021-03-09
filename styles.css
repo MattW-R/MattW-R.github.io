@@ -131,7 +131,21 @@ article:hover {
 }
 
 article img {
-	width: 100%;
+	width: 95%;
+	position: relative;
+	left: 2.5%;
+	top: 2.5%;
+}
+
+main article {
+	height: 280px;
+}
+
+main article p {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 31%;
 }
 
 .anchor-target {
