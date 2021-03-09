@@ -120,6 +120,11 @@ article {
 	min-width: 300px;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
 	background-color: #120458;
+	height: 410px;
+}
+
+main article {
+	height: 600px;
 }
 
 article:hover, article:focus {
@@ -137,6 +142,7 @@ article img {
 article p {
 	font-family: 'Libre Barcode 39', cursive;
 	font-size: 0.85rem;
+	transition: font-size 200ms linear;
 }
 
 article:hover p, article:focus p {
