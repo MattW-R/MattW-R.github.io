@@ -130,11 +130,11 @@ main article {
 	height: 610px;
 }
 
-article:hover, article:focus-within {
+article:hover, article:focus-within, h1:focus {
 	border-color: #FFFFFF;
 }
 
-article h2:focus, article p:focus, article:hover {
+article h2:focus, article p:focus, article:hover, h1:focus {
 	color: #FFFFFF;
 }
 
