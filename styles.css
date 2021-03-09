@@ -130,9 +130,12 @@ main article {
 	height: 610px;
 }
 
-article:hover, article:focus {
-	color: #FFFFFF;
+article:hover, article:focus-within {
 	border-color: #FFFFFF;
+}
+
+article h2:focus, article p:focus, article:hover {
+	color: #FFFFFF;
 }
 
 article img {
@@ -148,7 +151,7 @@ article p {
 	transition: font-size 200ms linear;
 }
 
-article:hover p, article:focus p {
+article:hover p, article:focus-within p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.8rem;
 }
