@@ -148,6 +148,10 @@ article h2:focus, article p:focus, article:hover, h1:focus {
 	color: #FFFFFF;
 }
 
+main {
+	flex-direction: row-reverse;
+}
+
 article img {
 	width: 95%;
 	position: relative;
