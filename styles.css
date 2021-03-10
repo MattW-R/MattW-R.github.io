@@ -76,7 +76,7 @@ p {
 	font-weight: 400;
 }
 
-nav a, nav h2 {
+nav a, nav h2, nav div a, footer div a {
 	display: inline-block;
 	text-decoration: none;
 	transition: border-color 200ms ease-in 100ms;
@@ -130,7 +130,7 @@ main article {
 	height: 650px;
 }
 
-article:hover, article:focus-within, h1:focus {
+article:hover, article:focus-within, h1:focus, article img:focus {
 	border-color: #FFFFFF;
 }
 
@@ -146,10 +146,6 @@ article img {
 	border: 6px solid transparent;
 	transition: border-color 200ms ease-in 100ms;
 	border-radius: 20px;
-}
-
-article img:focus {
-	border-color: #FFFFFF;
 }
 
 article p {
@@ -170,15 +166,35 @@ footer {
 	background: linear-gradient(180deg, rgba(18,4,88,0) 0%, rgba(122,4,235,1) 23%);
 }
 
+footer h1 {
+	background-color: transparent;
+	transition: border-color 200ms ease-in 100ms;
+	border: none;
+	border-bottom: 3px solid transparent;
+	border-radius: 0;
+	display: inline-block;
+	color: white;
+}
+
 footer div {
 	display: grid;
 	grid-template-rows: 6;
 	grid-template-columns: 2;
 }
 
+footer div a:hover, footer div a:focus {
+	border-color: #FFFFFF;
+}
+
+footer div a:visited {
+	color: #FFFFFF;
+}
+
 footer iframe {
 	grid-column-start: 2;
 	grid-row: 1 / span 6;
+	border: 6px solid #FFFFFF;
+	border-radius: 20px;
 }
 
 .anchor-target {
