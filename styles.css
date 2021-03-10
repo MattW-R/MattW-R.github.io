@@ -19,7 +19,6 @@ html {
 }
 
 body {
-	background-color: #120458;
 	color: #FE75FE;
 	margin-top: 60px;
 	background-image: url(images/BG.png);
@@ -36,16 +35,11 @@ a, h2, p, h1 {
 }
 
 a, h2 {
-	font-size: 1rem;
 	align-content: center;
 }
 
 h1 {
 	font-size: 1.4rem;
-	border: 3px solid #FE75FE;
-	border-radius: 10px;
-	background-color: #120458;
-	box-shadow: 0 0 7px #FE75FE;
 }
 
 p {
@@ -64,6 +58,18 @@ p::selection, h1::selection, h2::selection, img::selection, span::selection, a::
 
 footer h1::selection, footer a::selection, footer a span::selection, footer iframe::selection {
 	background: #120458;
+}
+
+.box {
+	border: 3px solid #FE75FE;
+	border-radius: 10px;
+	background-color: #120458;
+	box-shadow: 0 0 7px #FE75FE;
+	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
+}
+
+.box:focus-within, .box:hover, .box:focus {
+	border-color: #FFFFFF;
 }
 
 /*-------------------------------------------------------------------
@@ -146,17 +152,12 @@ header > div, main > div {
 }
 
 article {
-	border: 3px solid #FE75FE;
-	border-radius: 10px;
 	margin: 7px;
 	width: 30%;
 	min-width: 300px;
-	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
-	background-color: #120458;
-	box-shadow: 0 0 7px #FE75FE;
 }
 
-article:hover, article:focus-within, h1:focus, article img:focus {
+h1:focus, article img:focus {
 	border-color: #FFFFFF;
 }
 
@@ -192,6 +193,7 @@ footer {
 	padding-bottom: 20px;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
+	/* In case linear gradient not supported */
 	background: #7A04EB;
 	background: linear-gradient(180deg, transparent 0%, #7A04EB 8%);
 }
@@ -239,8 +241,6 @@ footer div a:visited, footer div a:link {
 }
 
 footer iframe {
-	grid-column-start: 2;
-	grid-row: 1 / span 6;
 	border: 6px solid #FFFFFF;
 	border-radius: 20px;
 }
@@ -283,7 +283,7 @@ footer iframe {
 		content: ": Matt W-R";
 	}
 	
-/*	Shrink & grow navbar links in a narrow resolution:	*/
+/*	Shrink & grow navbar links narrow resolutions:	*/
 	nav a .long-text {
 		width: 0;
 		color: transparent;
