@@ -242,6 +242,10 @@ footer iframe {
 		display: none;
 	}
 	
+	header h1::after {
+		content: ": Matt W-R";
+	}
+	
 /*	Shrink & grow navbar links in a narrow resolution:	*/
 	nav a .long-text {
 		width: 0;
