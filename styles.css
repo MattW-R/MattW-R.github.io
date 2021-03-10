@@ -190,6 +190,7 @@ footer > div > div, footer iframe {
 
 footer div a {
 	display: block;
+	width: max-content;
 }
 
 footer div a:hover, footer div a:focus {
