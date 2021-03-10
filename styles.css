@@ -160,9 +160,12 @@ article:hover p, article:focus-within p {
 }
 
 footer {
+	margin-top: 100px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background: rgb(18,4,88);
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	background: #7A04EB;
 	background: linear-gradient(180deg, transparent 0%, #7A04EB 8%);
 }
 
