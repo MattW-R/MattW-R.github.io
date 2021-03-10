@@ -18,6 +18,10 @@ html {
 	font-weight: 600;
 }
 
+canvas {
+	image-rendering: crisp-edges;
+}
+
 body {
 	color: #FE75FE;
 	margin-top: 65px;
@@ -25,6 +29,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
 	background-position: center;
 	background-attachment: fixed;
 }
@@ -315,5 +320,15 @@ footer iframe {
 		width: 0;
 		color: transparent;
 		user-select: none;
+	}
+}
+
+/*-----------------------------------------------------------------
+						WEBKIT ONLY
+-----------------------------------------------------------------*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+	body {
+		background-image: url(images/BGx10.png);
 	}
 }
