@@ -253,14 +253,14 @@ footer iframe {
 		transition: none;
 	}
 	
-	nav a:hover .long-text {
+	nav a:hover .long-text, nav a:focus .long-text {
 		width: auto;
 		color: #FF00A0;
 		user-select: all;
 		display: inline-block;
 	}
 	
-	nav a:hover .short-text {
+	nav a:hover .short-text, nav a:focus .short-text {
 		width: 0;
 		color: transparent;
 		user-select: none;
