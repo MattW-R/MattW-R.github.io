@@ -1,3 +1,7 @@
+/*-------------------------------------------------------------------
+						MACRO STYLING
+-------------------------------------------------------------------*/
+
 * {
 	box-sizing: border-box;
 }
@@ -62,6 +66,10 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 	background: #120458;
 }
 
+/*-------------------------------------------------------------------
+							NAV BAR
+-------------------------------------------------------------------*/
+
 nav {
 	position: fixed;
 	background-color: #120458;
@@ -121,6 +129,10 @@ nav a:focus, nav h2:focus, nav h2:focus span {
 	float: right;
 }
 
+/*-------------------------------------------------------------------
+						HEADER - ABOUT ME
+-------------------------------------------------------------------*/
+
 header, main {
 	width: 95%;
 	left: 2.5%;
@@ -152,6 +164,10 @@ article h2:focus, article p:focus, article:hover, h1:focus {
 	color: #FFFFFF;
 }
 
+/*-------------------------------------------------------------------
+						MAIN - PORTFOLIO
+-------------------------------------------------------------------*/
+
 main {
 	flex-direction: row-reverse;
 }
@@ -165,6 +181,10 @@ article img {
 	transition: border-color 200ms ease-in 100ms;
 	border-radius: 20px;
 }
+
+/*-----------------------------------------------------------------
+						FOOTER - CONTACT
+-----------------------------------------------------------------*/
 
 footer {
 	margin-top: 100px;
@@ -225,12 +245,20 @@ footer iframe {
 	border-radius: 20px;
 }
 
+/*-----------------------------------------------------------------
+							UTILITY
+-----------------------------------------------------------------*/
+
 .anchor-target {
 	display: block;
 	height: 0px;
 	position: relative;
 	top: -60px;
 }
+
+/*-----------------------------------------------------------------
+						SCREEN WIDTH HANDLING
+-----------------------------------------------------------------*/
 
 @media screen and (max-width: 890px) {
 	footer > div > div, footer iframe {
