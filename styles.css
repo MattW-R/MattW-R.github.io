@@ -103,7 +103,7 @@ nav a:focus, nav a:hover, nav h2:hover, nav h2:focus {
 	float: right;
 }
 
-header, main {
+header, main, footer {
 	width: 95%;
 	left: 2.5%;
 	position: relative;
@@ -161,6 +161,21 @@ article p {
 article:hover p, article:focus-within p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.8rem;
+}
+
+footer {
+	padding-bottom: 20px;
+}
+
+footer div {
+	display: grid;
+	grid-template-rows: 6;
+	grid-template-columns: 2;
+}
+
+footer iframe {
+	grid-column-start: 2;
+	grid-row: 1 / span 6;
 }
 
 .anchor-target {
