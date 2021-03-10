@@ -74,6 +74,8 @@ h1 {
 
 p {
 	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
 }
 
 nav a, nav h2, nav div a, footer div a {
@@ -123,11 +125,6 @@ article {
 	min-width: 300px;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
 	background-color: #120458;
-	height: 520px;
-}
-
-main article {
-	height: 650px;
 }
 
 article:hover, article:focus-within, h1:focus, article img:focus {
@@ -146,17 +143,6 @@ article img {
 	border: 6px solid transparent;
 	transition: border-color 200ms ease-in 100ms;
 	border-radius: 20px;
-}
-
-article p {
-	font-family: 'Libre Barcode 39', cursive;
-	font-size: 0.85rem;
-	transition: font-size 200ms linear;
-}
-
-article:hover p, article:focus-within p {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.8rem;
 }
 
 footer {
