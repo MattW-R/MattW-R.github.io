@@ -24,7 +24,7 @@ canvas {
 
 body {
 	color: #FE75FE;
-	margin-top: 65px;
+	margin-top: 60px;
 	background-image: url(images/BG.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -40,6 +40,7 @@ a, h2, p, h1 {
 }
 
 a, h2 {
+	font-size: 1rem;
 	align-content: center;
 }
 
