@@ -179,10 +179,17 @@ footer h1 {
 	color: white;
 }
 
-footer div {
-	display: grid;
-	grid-template-rows: 6;
-	grid-template-columns: 2;
+footer > div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer > div > div, footer iframe {
+	width: 50%;
+}
+
+footer div a {
+	display: block;
 }
 
 footer div a:hover, footer div a:focus {
@@ -205,6 +212,12 @@ footer iframe {
 	height: 0px;
 	position: relative;
 	top: -60px;
+}
+
+@media screen and (max-width: 890px) {
+	footer > div > div, footer iframe {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 820px) {
