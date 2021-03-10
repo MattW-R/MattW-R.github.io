@@ -78,6 +78,14 @@ p {
 	font-size: 0.8rem;
 }
 
+p::selection, h1::selection, h2::selection, img::selection, span::selection, a::selection {
+  	background: #7A04EB;
+}
+
+footer h1::selection, footer a::selection, footer a span::selection, footer iframe::selection {
+	background: #120458;
+}
+
 nav a, nav h2, nav div a, footer div a {
 	display: inline-block;
 	text-decoration: none;
