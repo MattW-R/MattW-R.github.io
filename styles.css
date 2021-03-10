@@ -89,7 +89,7 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 nav a, nav h2, nav div a, footer div a {
 	display: inline-block;
 	text-decoration: none;
-	transition: border-color 200ms ease-in 100ms;
+	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
 	border-bottom: 3px solid transparent;
 }
 
@@ -103,6 +103,11 @@ nav a:visited, nav a:link {
 
 nav a:focus, nav a:hover, nav h2:hover, nav h2:focus {
 	border-color: #FF00A0;
+}
+
+nav a:focus, nav h2:focus, nav h2:focus span {
+	color: #FFFFFF;
+	border-color: #FFFFFF;
 }
 
 .nav-name {
@@ -243,21 +248,26 @@ footer iframe {
 		color: transparent;
 		user-select: none;
 		display :none;
-		transition: none;
 	}
 	
 	nav a .short-text {
 		width: auto;
 		color: #FF00A0;
 		user-select: all;
-		transition: none;
 	}
 	
 	nav a:hover .long-text, nav a:focus .long-text {
 		width: auto;
-		color: #FF00A0;
 		user-select: all;
 		display: inline-block;
+	}
+	
+	nav a:hover .long-text {
+		color: #FF00A0;
+	}
+	
+	nav a:focus .long-text {
+		color: #FFFFFF;
 	}
 	
 	nav a:hover .short-text, nav a:focus .short-text {
