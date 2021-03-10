@@ -103,7 +103,7 @@ nav a:focus, nav a:hover, nav h2:hover, nav h2:focus {
 	float: right;
 }
 
-header, main, footer {
+header, main {
 	width: 95%;
 	left: 2.5%;
 	position: relative;
@@ -164,7 +164,10 @@ article:hover p, article:focus-within p {
 }
 
 footer {
+	padding-top: 20px;
 	padding-bottom: 20px;
+	background: rgb(18,4,88);
+	background: linear-gradient(180deg, rgba(18,4,88,0) 0%, rgba(122,4,235,1) 23%);
 }
 
 footer div {
