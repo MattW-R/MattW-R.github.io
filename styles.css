@@ -267,6 +267,11 @@ footer iframe {
 -----------------------------------------------------------------*/
 
 @media screen and (max-width: 890px) {
+	nav {
+		width: 100%;
+		left: 0;
+	}
+	
 	footer > div > div, footer iframe {
 		width: 100%;
 	}
@@ -281,6 +286,10 @@ footer iframe {
 }
 
 @media screen and (max-width: 630px) {
+	html {
+		font-size: 18px;
+	}
+	
 	nav h2 {
 		display: none;
 	}
