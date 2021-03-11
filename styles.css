@@ -39,9 +39,8 @@ a, h2, p, h1 {
 	padding: 5px;
 }
 
-a, h2 {
+h2 {
 	font-size: 1rem;
-	align-content: center;
 }
 
 h1 {
@@ -174,10 +173,6 @@ article h2:focus, article p:focus, article:hover, h1:focus {
 /*-------------------------------------------------------------------
 						MAIN - PORTFOLIO
 -------------------------------------------------------------------*/
-
-main {
-	flex-direction: row-reverse;
-}
 
 article img {
 	width: 95%;
