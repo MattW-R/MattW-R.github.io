@@ -6,8 +6,6 @@
 	box-sizing: border-box;
 }
 
-/* Don't fear I have added in my own tab focus styling */
-
 *:focus {
 	outline: none;
 }
@@ -25,7 +23,7 @@ canvas {
 body {
 	color: #FE75FE;
 	margin-top: 60px;
-	background-image: url(images/BG.png);
+	background-image: url("images/BG.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	image-rendering: pixelated;
@@ -95,7 +93,7 @@ nav {
 
 nav h2 span, footer a span {
 	width: 0;
-	color: transparent;
+	color: #00000000;
 	transition: width 200ms ease-in 100ms, color 200ms ease-in 100ms;
 	user-select: none;
 }
@@ -108,7 +106,7 @@ nav h2:hover span, nav h2:focus span {
 
 nav a .short-text {
 	width: 0;
-	color: transparent;
+	color: #00000000;
 	user-select: none;
 }
 
@@ -116,7 +114,7 @@ nav a, nav h2, nav div a, footer div a {
 	display: inline-block;
 	text-decoration: none;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
-	border-bottom: 3px solid transparent;
+	border-bottom: 3px solid #00000000;
 }
 
 nav a:visited, nav a:link {
@@ -179,7 +177,7 @@ article img {
 	position: relative;
 	left: 2.5%;
 	top: 2.5%;
-	border: 6px solid transparent;
+	border: 6px solid #00000000;
 	transition: border-color 200ms ease-in 100ms;
 	border-radius: 20px;
 }
@@ -196,17 +194,17 @@ footer {
 	padding-right: 2.5%;
 	/* In case linear gradient not supported */
 	background: #7A04EB;
-	background: linear-gradient(180deg, transparent 0%, #7A04EB 8%);
+	background: linear-gradient(180deg, #00000000 0%, #7A04EB 8%);
 }
 
 footer h1 {
-	background-color: transparent;
+	background-color: #00000000;
 	transition: border-color 200ms ease-in 100ms;
 	border: none;
-	border-bottom: 3px solid transparent;
+	border-bottom: 3px solid #00000000;
 	border-radius: 0;
 	display: inline-block;
-	color: white;
+	color: #FFFFFF;
 	box-shadow: none;
 }
 
@@ -275,7 +273,7 @@ footer iframe {
 @media screen and (max-width: 820px) {
 	nav h2:hover span {
 		width: 0;
-		color: transparent;
+		color: #00000000;
 		user-select: none;
 	}
 }
@@ -296,7 +294,7 @@ footer iframe {
 /*	Shrink & grow navbar links narrow resolutions:	*/
 	nav a .long-text {
 		width: 0;
-		color: transparent;
+		color: #00000000;
 		user-select: none;
 		display :none;
 	}
@@ -323,7 +321,7 @@ footer iframe {
 	
 	nav a:hover .short-text, nav a:focus .short-text {
 		width: 0;
-		color: transparent;
+		color: #00000000;
 		user-select: none;
 	}
 }
@@ -334,6 +332,6 @@ footer iframe {
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {  
 	body {
-		background-image: url(images/BGx10.png);
+		background-image: url("images/BGx10.png");
 	}
 }
