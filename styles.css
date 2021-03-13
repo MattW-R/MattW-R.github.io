@@ -40,9 +40,10 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 }
 
 .box {
-	border: 3px solid #FE75FE;
+	border-width: 3px;
+	border-color: #FE75FE #00000000;
+	border-style: solid;
 	background-color: #120458;
-	box-shadow: 0 0 7px #FE75FE;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
 }
 
