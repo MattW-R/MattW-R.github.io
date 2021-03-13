@@ -53,6 +53,10 @@ nav a, nav h2, nav div a, footer div a {
 						HEADER - ABOUT ME
 -------------------------------------------------------------------*/
 
+header {
+	margin-top: 70px;
+}
+
 header, main {
 	width: 95%;
 	left: 2.5%;
