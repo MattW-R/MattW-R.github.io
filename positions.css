@@ -67,12 +67,13 @@ header > div, main > div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: flex-start;
 }
 
 article {
 	margin: 10px;
 	width: 30%;
-	min-width: 300px;
+	min-width: 350px;
 }
 
 /*-------------------------------------------------------------------

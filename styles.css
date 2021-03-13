@@ -161,6 +161,25 @@ footer iframe {
 						SCREEN WIDTH HANDLING
 -----------------------------------------------------------------*/
 
+@media screen and (min-width: 630px) {
+	.box p {
+		height: 0;
+		color: transparent;
+		transition: height 200ms linear 100ms, color 100ms ease-in 100ms;
+		user-select: none;
+	}
+	
+	.box:hover p, .box:focus-within p {
+		height: 320px;
+		color: #FE75FE;
+		user-select: all;
+	}
+
+	.box p:focus {
+		color: #FFFFFF;
+	}
+}
+
 @media screen and (max-width: 820px) {
 	nav h2:hover span {
 		width: 0;
