@@ -1,0 +1,139 @@
+/*-------------------------------------------------------------------
+						MACRO STYLING
+-------------------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin-top: 60px;
+}
+
+a, h2, p, h1 {
+	margin: 10px;
+	padding: 5px;
+}
+
+span {
+	display: inline-block;
+}
+
+/*-------------------------------------------------------------------
+							NAV BAR
+-------------------------------------------------------------------*/
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 2.5%;
+	width: 95%;
+	z-index: 5;
+	overflow: hidden;
+}
+
+nav a, nav h2, nav div a, footer div a {
+	display: inline-block;
+}
+
+.nav-name {
+	float: left;
+}
+
+.nav-links {
+	float: right;
+}
+
+/*-------------------------------------------------------------------
+						HEADER - ABOUT ME
+-------------------------------------------------------------------*/
+
+header, main {
+	width: 95%;
+	left: 2.5%;
+	position: relative;
+}
+
+header > div, main > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+article {
+	margin: 7px;
+	width: 30%;
+	min-width: 300px;
+}
+
+/*-------------------------------------------------------------------
+						MAIN - PORTFOLIO
+-------------------------------------------------------------------*/
+
+article img {
+	width: 95%;
+	position: relative;
+	left: 2.5%;
+	top: 2.5%;
+}
+
+/*-----------------------------------------------------------------
+						FOOTER - CONTACT
+-----------------------------------------------------------------*/
+
+footer {
+	margin-top: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+footer h1 {
+	display: inline-block;
+}
+
+footer > div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer > div > div, footer iframe {
+	width: 50%;
+}
+
+footer div a {
+	display: block;
+	width: max-content;
+}
+
+footer div a span {
+	width: 16rem;
+}
+
+/*-----------------------------------------------------------------
+							UTILITY
+-----------------------------------------------------------------*/
+
+.anchor-target {
+	display: block;
+	height: 0px;
+	position: relative;
+	top: -60px;
+}
+
+/*-----------------------------------------------------------------
+						SCREEN WIDTH HANDLING
+-----------------------------------------------------------------*/
+
+@media screen and (max-width: 890px) {
+	nav {
+		width: 100%;
+		left: 0;
+	}
+	
+	footer > div > div, footer iframe {
+		width: 100%;
+	}
+}
+
