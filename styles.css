@@ -58,6 +58,10 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 							NAV BAR
 -------------------------------------------------------------------*/
 
+nav, header, main, footer {
+	transform: skew(-1deg, -1deg);
+}
+
 nav {
 	background-color: #120458;
 	color: #FF00A0;

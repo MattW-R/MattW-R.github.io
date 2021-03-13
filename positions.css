@@ -29,11 +29,12 @@ span {
 
 nav {
 	position: fixed;
-	top: 0;
+	top: -5%;
 	left: 2.5%;
 	width: 95%;
 	z-index: 5;
 	overflow: hidden;
+	padding-top: 5%;
 }
 
 nav a, nav h2, nav div a, footer div a {
