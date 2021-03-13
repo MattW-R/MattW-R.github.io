@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	color: #FE75FE;
+	color: #120458;
 	background-color: #120458;
 }
 
@@ -41,9 +41,9 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 
 .box {
 	border: 3px solid #FE75FE;
-	border-radius: 10px;
-	background-color: #120458;
-	box-shadow: 0 0 7px #FE75FE;
+	background: #FFB7FF;
+	background: radial-gradient(circle, #FFB7FF 0%, #FE75FE 70%);
+	/* Use similar glow later box-shadow: 0 0 7px #FE75FE; */
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
 }
 
