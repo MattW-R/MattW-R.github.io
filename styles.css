@@ -49,9 +49,17 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms, box-shadow 200ms ease-in 100ms;
 }
 
+main .box {
+	border-color: #00000000 #00000000 #B5FFE1 #00000000;
+}
+
 .box:focus-within, .box:hover, .box:focus {
 	border-color: #FFFFFF;
 	box-shadow: 5px 5px #FF124F;
+}
+
+main .box:focus-within, main .box:hover, main .box:focus {
+	box-shadow: 5px 5px #FFBF00;
 }
 
 /*-------------------------------------------------------------------
@@ -122,6 +130,10 @@ article h2:focus, article p:focus, article:hover, h1:focus {
 						MAIN - PORTFOLIO
 -------------------------------------------------------------------*/
 
+main h1, main h2, main p {
+	color: #B5FFE1;
+}
+
 article img {
 	border: 6px solid transparent;
 	transition: border-color 200ms ease-in 100ms;
@@ -171,11 +183,18 @@ footer iframe {
 	
 	.box:hover p, .box:focus-within p {
 		height: 320px;
-		color: #FE75FE;
 		user-select: all;
 	}
-
-	.box p:focus {
+	
+	header .box:hover p, header .box:focus-within p {
+		color: #FE75FE;
+	}
+	
+	main .box:hover p, main .box:focus-within p {
+		color: #B5FFE1;
+	}
+	
+	.box:focus-within p:focus {
 		color: #FFFFFF;
 	}
 }
