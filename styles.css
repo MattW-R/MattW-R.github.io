@@ -177,7 +177,7 @@ footer iframe {
 	.box p {
 		height: 0;
 		color: transparent;
-		transition: height 200ms linear 100ms, color 100ms ease-in 100ms;
+		transition: height 200ms ease-in-out 100ms, color 100ms ease-in-out 100ms;
 		user-select: none;
 	}
 	
