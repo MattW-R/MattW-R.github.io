@@ -41,7 +41,6 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 
 .box {
 	border: 3px solid #FE75FE;
-	border-radius: 10px;
 	background-color: #120458;
 	box-shadow: 0 0 7px #FE75FE;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
@@ -118,7 +117,6 @@ article h2:focus, article p:focus, article:hover, h1:focus {
 article img {
 	border: 6px solid transparent;
 	transition: border-color 200ms ease-in 100ms;
-	border-radius: 20px;
 }
 
 /*-----------------------------------------------------------------
@@ -156,7 +154,6 @@ footer div a:visited, footer div a:link {
 
 footer iframe {
 	border: 6px solid #FFFFFF;
-	border-radius: 20px;
 }
 
 /*-----------------------------------------------------------------
