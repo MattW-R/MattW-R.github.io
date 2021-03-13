@@ -46,11 +46,12 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 	border-color: #FE75FE #00000000;
 	border-style: solid;
 	background-color: #120458;
-	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
+	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms, box-shadow 200ms ease-in 100ms;
 }
 
 .box:focus-within, .box:hover, .box:focus {
 	border-color: #FFFFFF;
+	box-shadow: 5px 5px #FF124F;
 }
 
 /*-------------------------------------------------------------------
