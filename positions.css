@@ -34,7 +34,7 @@ nav {
 	width: 95%;
 	z-index: 5;
 	overflow: hidden;
-	padding-top: 5%;
+	padding-top: 60px;
 }
 
 nav a, nav h2, nav div a, footer div a {
@@ -72,7 +72,7 @@ header > div, main > div {
 
 article {
 	margin: 10px;
-	width: 30%;
+	width: 25%;
 	min-width: 350px;
 }
 
@@ -145,6 +145,7 @@ footer div a span {
 
 @media screen and (max-width: 630px) {
 	nav {
+		padding-top: 20px;
 		top: -2%;
 		padding-right: 5%;
 	}
