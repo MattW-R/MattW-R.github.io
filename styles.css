@@ -23,6 +23,8 @@ h2 {
 
 h1 {
 	font-size: 1.4rem;
+	transition: border-color 200ms ease-in 100ms;
+	border-bottom: 3px solid transparent;
 }
 
 p {
@@ -131,13 +133,7 @@ footer {
 }
 
 footer h1 {
-	background-color: transparent;
-	transition: border-color 200ms ease-in 100ms;
-	border: none;
-	border-bottom: 3px solid transparent;
-	border-radius: 0;
 	color: white;
-	box-shadow: none;
 }
 
 footer div a:hover, footer div a:focus {
