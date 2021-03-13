@@ -128,9 +128,8 @@ article img {
 -----------------------------------------------------------------*/
 
 footer {
-	/* In case linear gradient not supported */
-	background: #7A04EB;
-	background: linear-gradient(180deg, transparent 0%, #7A04EB 8%);
+	background-color: #7A04EB;
+	border-top: 3px solid #FFFFFF;
 }
 
 footer h1 {
