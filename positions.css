@@ -142,3 +142,13 @@ footer div a span {
 	}
 }
 
+@media screen and (max-width: 630px) {
+	nav {
+		top: -2%;
+		padding-right: 5%;
+	}
+	
+	header {
+		margin-top: 0;
+	}
+}
