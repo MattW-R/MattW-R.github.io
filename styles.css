@@ -135,7 +135,7 @@ main h1, main h2, main p {
 }
 
 article img {
-	border: 6px solid transparent;
+	border: 3px solid transparent;
 	transition: border-color 200ms ease-in 100ms;
 }
 
@@ -196,10 +196,6 @@ footer iframe {
 	
 	.box:focus-within p:focus {
 		color: #FFFFFF;
-	}
-	
-	footer {
-		
 	}
 }
 

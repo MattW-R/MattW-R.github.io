@@ -80,6 +80,7 @@ article {
 -------------------------------------------------------------------*/
 
 article img {
+	margin-top: 8px;
 	width: 95%;
 	position: relative;
 	left: 2.5%;
