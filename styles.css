@@ -53,12 +53,12 @@ main .box {
 	border-color: #00000000 #00000000 #B5FFE1 #00000000;
 }
 
-.box:focus-within, .box:hover, .box:focus {
+.box:focus-within, .box:focus {
 	border-color: #FFFFFF;
 	box-shadow: 5px 5px #FF124F;
 }
 
-main .box:focus-within, main .box:hover, main .box:focus {
+main .box:focus-within, main .box:focus {
 	box-shadow: 5px 5px #FFBF00;
 }
 
@@ -122,7 +122,7 @@ h1:focus, article img:focus {
 	border-color: #FFFFFF;
 }
 
-article h2:focus, article p:focus, article:hover, h1:focus {
+article h2:focus, article p:focus, h1:focus {
 	color: #FFFFFF;
 }
 
@@ -181,16 +181,16 @@ footer iframe {
 		user-select: none;
 	}
 	
-	.box:hover p, .box:focus-within p {
+	.box:focus-within p {
 		height: 320px;
 		user-select: all;
 	}
 	
-	header .box:hover p, header .box:focus-within p {
+	header .box:focus-within p {
 		color: #FE75FE;
 	}
 	
-	main .box:hover p, main .box:focus-within p {
+	main .box:focus-within p {
 		color: #B5FFE1;
 	}
 	
