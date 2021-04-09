@@ -215,4 +215,10 @@ footer iframe {
 	article.expanded p {
 		height: 160px;
 	}
+
+	footer div a span {
+		width: auto;
+		color: #FFFFFF;
+		user-select: all;
+	}
 }
