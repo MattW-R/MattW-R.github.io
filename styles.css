@@ -89,12 +89,6 @@ nav h2:hover span, nav h2:focus span {
 	user-select: all;
 }
 
-nav a .short-text {
-	width: 0;
-	color: #00000000;
-	user-select: none;
-}
-
 nav a, nav h2, nav div a, footer div a {
 	text-decoration: none;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
@@ -216,40 +210,6 @@ footer iframe {
 	
 	header h1::after {
 		content: ": Matt W-R";
-	}
-	
-/*	Shrink & grow navbar links narrow resolutions:	*/
-	nav a .long-text {
-		width: 0;
-		color: #00000000;
-		user-select: none;
-		display :none;
-	}
-	
-	nav a .short-text {
-		width: auto;
-		color: #FF00A0;
-		user-select: all;
-	}
-	
-	nav a:hover .long-text, nav a:focus .long-text {
-		width: auto;
-		user-select: all;
-		display: inline-block;
-	}
-	
-	nav a:hover .long-text {
-		color: #FF00A0;
-	}
-	
-	nav a:focus .long-text {
-		color: #FFFFFF;
-	}
-	
-	nav a:hover .short-text, nav a:focus .short-text {
-		width: 0;
-		color: #00000000;
-		user-select: none;
 	}
 
 	article.expanded p {
