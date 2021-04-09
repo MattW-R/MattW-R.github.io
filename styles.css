@@ -41,7 +41,7 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 	background: #120458;
 }
 
-.box {
+article {
 	border-width: 3px;
 	border-color: #00000000 #00000000 #FE75FE #00000000;
 	border-style: solid;
@@ -49,16 +49,16 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms, box-shadow 200ms ease-in 100ms;
 }
 
-main .box {
+main article {
 	border-color: #00000000 #00000000 #B5FFE1 #00000000;
 }
 
-.box.expanded {
+article.expanded {
 	border-color: #FFFFFF;
 	box-shadow: 5px 5px #FF124F;
 }
 
-main .box.expanded {
+main article.expanded {
 	box-shadow: 5px 5px #FFBF00;
 }
 
@@ -126,23 +126,23 @@ article h2:focus, article p:focus, h1:focus {
 	color: #FFFFFF;
 }
 
-.box p {
+article p {
 	height: 0;
 	color: transparent;
 	transition: height 200ms ease-in-out 100ms, color 100ms ease-in-out 100ms;
 	user-select: none;
 }
 
-.box.expanded p {
+article.expanded p {
 	height: 320px;
 	user-select: all;
 }
 
-header .box.expanded p {
+header article.expanded p {
 	color: #FE75FE;
 }
 
-.box.expanded p:focus {
+article.expanded p:focus {
 	color: #FFFFFF;
 }
 
@@ -150,7 +150,7 @@ header .box.expanded p {
 						MAIN - PORTFOLIO
 -------------------------------------------------------------------*/
 
-main h1, main h2, main p {
+main h1, main h2 {
 	color: #B5FFE1;
 }
 
@@ -159,7 +159,7 @@ article img {
 	transition: border-color 200ms ease-in 100ms;
 }
 
-main .box.expanded p {
+main article.expanded p {
 	color: #B5FFE1;
 }
 
@@ -252,7 +252,7 @@ footer iframe {
 		user-select: none;
 	}
 
-	.box.expanded p {
+	article.expanded p {
 		height: 160px;
 	}
 }

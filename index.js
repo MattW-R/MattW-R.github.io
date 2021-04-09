@@ -18,13 +18,13 @@ const expandParentBox = (e, boxChild) => {
 }
 
 const addExpandEffectToBoxes = () => {
-    document.querySelectorAll('.box').forEach(box => {
+    document.querySelectorAll('article').forEach(box => {
         box.addEventListener('mousedown', e => {
             toggleExpandBox(e, box)
         })
     })
 
-    document.querySelectorAll('.box p, .box h2, .box img').forEach(boxChild => {
+    document.querySelectorAll('article p, article h2, article img').forEach(boxChild => {
         boxChild.addEventListener('focus', e => {
             expandParentBox(e, boxChild)
         })
