@@ -53,12 +53,12 @@ main .box {
 	border-color: #00000000 #00000000 #B5FFE1 #00000000;
 }
 
-.box:focus-within, .box:focus {
+.box.expanded {
 	border-color: #FFFFFF;
 	box-shadow: 5px 5px #FF124F;
 }
 
-main .box:focus-within, main .box:focus {
+main .box.expanded {
 	box-shadow: 5px 5px #FFBF00;
 }
 
@@ -181,20 +181,20 @@ footer iframe {
 		user-select: none;
 	}
 	
-	.box:focus-within p {
+	.box.expanded p {
 		height: 320px;
 		user-select: all;
 	}
 	
-	header .box:focus-within p {
+	header .box.expanded p {
 		color: #FE75FE;
 	}
 	
-	main .box:focus-within p {
+	main .box.expanded p {
 		color: #B5FFE1;
 	}
 	
-	.box:focus-within p:focus {
+	.box.expanded p:focus {
 		color: #FFFFFF;
 	}
 }
