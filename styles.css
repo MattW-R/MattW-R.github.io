@@ -126,6 +126,26 @@ article h2:focus, article p:focus, h1:focus {
 	color: #FFFFFF;
 }
 
+.box p {
+	height: 0;
+	color: transparent;
+	transition: height 200ms ease-in-out 100ms, color 100ms ease-in-out 100ms;
+	user-select: none;
+}
+
+.box.expanded p {
+	height: 320px;
+	user-select: all;
+}
+
+header .box.expanded p {
+	color: #FE75FE;
+}
+
+.box.expanded p:focus {
+	color: #FFFFFF;
+}
+
 /*-------------------------------------------------------------------
 						MAIN - PORTFOLIO
 -------------------------------------------------------------------*/
@@ -137,6 +157,10 @@ main h1, main h2, main p {
 article img {
 	border: 3px solid transparent;
 	transition: border-color 200ms ease-in 100ms;
+}
+
+main .box.expanded p {
+	color: #B5FFE1;
 }
 
 /*-----------------------------------------------------------------
@@ -172,32 +196,6 @@ footer iframe {
 /*-----------------------------------------------------------------
 						SCREEN WIDTH HANDLING
 -----------------------------------------------------------------*/
-
-@media screen and (min-width: 630px) {
-	.box p {
-		height: 0;
-		color: transparent;
-		transition: height 200ms ease-in-out 100ms, color 100ms ease-in-out 100ms;
-		user-select: none;
-	}
-	
-	.box.expanded p {
-		height: 320px;
-		user-select: all;
-	}
-	
-	header .box.expanded p {
-		color: #FE75FE;
-	}
-	
-	main .box.expanded p {
-		color: #B5FFE1;
-	}
-	
-	.box.expanded p:focus {
-		color: #FFFFFF;
-	}
-}
 
 @media screen and (max-width: 820px) {
 	nav h2:hover span {
@@ -252,5 +250,9 @@ footer iframe {
 		width: 0;
 		color: #00000000;
 		user-select: none;
+	}
+
+	.box.expanded p {
+		height: 160px;
 	}
 }
