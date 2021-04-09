@@ -41,7 +41,7 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 	background: #120458;
 }
 
-.box {
+article {
 	border-width: 3px;
 	border-color: #00000000 #00000000 #FE75FE #00000000;
 	border-style: solid;
@@ -49,16 +49,16 @@ footer h1::selection, footer a::selection, footer a span::selection, footer ifra
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms, box-shadow 200ms ease-in 100ms;
 }
 
-main .box {
+main article {
 	border-color: #00000000 #00000000 #B5FFE1 #00000000;
 }
 
-.box:focus-within, .box:hover, .box:focus {
+article.expanded {
 	border-color: #FFFFFF;
 	box-shadow: 5px 5px #FF124F;
 }
 
-main .box:focus-within, main .box:hover, main .box:focus {
+main article.expanded {
 	box-shadow: 5px 5px #FFBF00;
 }
 
@@ -89,12 +89,6 @@ nav h2:hover span, nav h2:focus span {
 	user-select: all;
 }
 
-nav a .short-text {
-	width: 0;
-	color: #00000000;
-	user-select: none;
-}
-
 nav a, nav h2, nav div a, footer div a {
 	text-decoration: none;
 	transition: border-color 200ms ease-in 100ms, color 200ms ease-in 100ms;
@@ -122,7 +116,27 @@ h1:focus, article img:focus {
 	border-color: #FFFFFF;
 }
 
-article h2:focus, article p:focus, article:hover, h1:focus {
+article h2:focus, article p:focus, h1:focus {
+	color: #FFFFFF;
+}
+
+article p {
+	height: 0;
+	color: transparent;
+	transition: height 200ms ease-in-out 100ms, color 100ms ease-in-out 100ms;
+	user-select: none;
+}
+
+article.expanded p {
+	height: 320px;
+	user-select: all;
+}
+
+header article.expanded p {
+	color: #FE75FE;
+}
+
+article.expanded p:focus {
 	color: #FFFFFF;
 }
 
@@ -130,13 +144,17 @@ article h2:focus, article p:focus, article:hover, h1:focus {
 						MAIN - PORTFOLIO
 -------------------------------------------------------------------*/
 
-main h1, main h2, main p {
+main h1, main h2 {
 	color: #B5FFE1;
 }
 
 article img {
-	border: 6px solid transparent;
+	border: 3px solid transparent;
 	transition: border-color 200ms ease-in 100ms;
+}
+
+main article.expanded p {
+	color: #B5FFE1;
 }
 
 /*-----------------------------------------------------------------
@@ -173,36 +191,6 @@ footer iframe {
 						SCREEN WIDTH HANDLING
 -----------------------------------------------------------------*/
 
-@media screen and (min-width: 630px) {
-	.box p {
-		height: 0;
-		color: transparent;
-		transition: height 200ms ease-in-out 100ms, color 100ms ease-in-out 100ms;
-		user-select: none;
-	}
-	
-	.box:hover p, .box:focus-within p {
-		height: 320px;
-		user-select: all;
-	}
-	
-	header .box:hover p, header .box:focus-within p {
-		color: #FE75FE;
-	}
-	
-	main .box:hover p, main .box:focus-within p {
-		color: #B5FFE1;
-	}
-	
-	.box:focus-within p:focus {
-		color: #FFFFFF;
-	}
-	
-	footer {
-		
-	}
-}
-
 @media screen and (max-width: 820px) {
 	nav h2:hover span {
 		width: 0;
@@ -223,38 +211,14 @@ footer iframe {
 	header h1::after {
 		content: ": Matt W-R";
 	}
-	
-/*	Shrink & grow navbar links narrow resolutions:	*/
-	nav a .long-text {
-		width: 0;
-		color: #00000000;
-		user-select: none;
-		display :none;
+
+	article.expanded p {
+		height: 160px;
 	}
-	
-	nav a .short-text {
+
+	footer div a span {
 		width: auto;
-		color: #FF00A0;
-		user-select: all;
-	}
-	
-	nav a:hover .long-text, nav a:focus .long-text {
-		width: auto;
-		user-select: all;
-		display: inline-block;
-	}
-	
-	nav a:hover .long-text {
-		color: #FF00A0;
-	}
-	
-	nav a:focus .long-text {
 		color: #FFFFFF;
-	}
-	
-	nav a:hover .short-text, nav a:focus .short-text {
-		width: 0;
-		color: #00000000;
-		user-select: none;
+		user-select: all;
 	}
 }

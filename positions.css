@@ -30,8 +30,7 @@ span {
 nav {
 	position: fixed;
 	top: -5%;
-	left: 2.5%;
-	width: 95%;
+	width: 100%;
 	z-index: 5;
 	overflow: hidden;
 	padding-top: 60px;
@@ -81,6 +80,7 @@ article {
 -------------------------------------------------------------------*/
 
 article img {
+	margin-top: 8px;
 	width: 95%;
 	position: relative;
 	left: 2.5%;
