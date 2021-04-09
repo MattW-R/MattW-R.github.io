@@ -1,24 +1,32 @@
+const toggleExpandBox = (e, box) => {
+    e.preventDefault()
+    if (box.classList.contains('expanded')) {
+        box.classList.remove('expanded')
+        if (box.contains(document.activeElement)) {
+            document.activeElement.blur()
+        }
+    } else {
+        box.classList.add('expanded')
+    }
+}
+
+const expandParentBox = (e, boxChild) => {
+    e.preventDefault()
+    if (!boxChild.parentElement.classList.contains('expanded')) {
+        boxChild.parentElement.classList.add('expanded')
+    }
+}
+
 const addExpandEffectToBoxes = () => {
     document.querySelectorAll('.box').forEach(box => {
         box.addEventListener('mousedown', e => {
-            e.preventDefault()
-            if (box.classList.contains('expanded')) {
-                box.classList.remove('expanded')
-                if (box.contains(document.activeElement)) {
-                    document.activeElement.blur()
-                }
-            } else {
-                box.classList.add('expanded')
-            }
+            toggleExpandBox(e, box)
         })
     })
 
     document.querySelectorAll('.box p, .box h2, .box img').forEach(boxChild => {
         boxChild.addEventListener('focus', e => {
-            e.preventDefault()
-            if (!boxChild.parentElement.classList.contains('expanded')) {
-                boxChild.parentElement.classList.add('expanded')
-            }
+            expandParentBox(e, boxChild)
         })
     })
 }
